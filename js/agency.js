@@ -20,16 +20,16 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
-  });
+  // // Activate scrollspy to add active class to navbar items on scroll
+  // $('body').scrollspy({
+  //   target: '#mainNav',
+  //   offset: 56
+  // });
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+    if ($("#mainNav.g-animate").offset().top > 100) {
+      $("#mainNav.g-animate").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
